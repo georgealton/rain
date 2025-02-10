@@ -2,8 +2,8 @@ package kms
 
 import (
 	"context"
-	rainaws "github.com/aws-cloudformation/rain/internal/aws"
 	"github.com/aws/aws-sdk-go-v2/service/kms"
+	rainaws "github.com/georgealton/rain/internal/aws"
 	"time"
 )
 

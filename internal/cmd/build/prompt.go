@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/aws-cloudformation/rain/internal/aws/bedrock"
-	"github.com/aws-cloudformation/rain/internal/config"
+	"github.com/georgealton/rain/internal/aws/bedrock"
+	"github.com/georgealton/rain/internal/config"
 )
 
 // prompt invokes bedrock to produce a template based on the prompt
@@ -46,7 +46,7 @@ func promptGuard(p string, mid string) {
 	} else {
 
 		sample := `let s3_buckets_server_side_encryption = Resources.*[ Type == 'AWS::S3::Bucket'
-  Metadata.cfn_nag.rules_to_suppress not exists or 
+  Metadata.cfn_nag.rules_to_suppress not exists or
   Metadata.cfn_nag.rules_to_suppress.*.id != "W41"
   Metadata.guard.SuppressedRules not exists or
   Metadata.guard.SuppressedRules.* != "S3_BUCKET_SERVER_SIDE_ENCRYPTION_ENABLED"
@@ -94,23 +94,23 @@ func promptRego(p string, mid string) {
 	} else {
 
 		sample := `
-import input 
+import input
 
 # deny if it creates more than 10 EC2 instances
-deny_too_many_ec2[deny] {                             
-    instances := [res | res:=input.Resources[_]; res.Type == "AWS::EC2::Instance"]   
-    count(instances) > 10  
+deny_too_many_ec2[deny] {
+    instances := [res | res:=input.Resources[_]; res.Type == "AWS::EC2::Instance"]
+    count(instances) > 10
     deny := true
 }
 
 # deny if ssh is enabled
-deny_ssh_enabled[deny] {                             
+deny_ssh_enabled[deny] {
     input.Resources[_].Properties.SecurityGroupIngress[_].ToPort == 22
     deny := true
 }
 
 # deny if it creates IAM role
-deny_role_created[deny] {                             
+deny_role_created[deny] {
     input.Resources[_].Type == "AWS::IAM::Role"
     deny := true
 }

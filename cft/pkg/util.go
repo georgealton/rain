@@ -27,9 +27,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/aws-cloudformation/rain/internal/aws"
-	"github.com/aws-cloudformation/rain/internal/aws/s3"
-	"github.com/aws-cloudformation/rain/internal/config"
+	"github.com/georgealton/rain/internal/aws"
+	"github.com/georgealton/rain/internal/aws/s3"
+	"github.com/georgealton/rain/internal/config"
 	"gopkg.in/yaml.v3"
 )
 

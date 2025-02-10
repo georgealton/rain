@@ -3,8 +3,8 @@ package servicequotas
 import (
 	"context"
 
-	aws "github.com/aws-cloudformation/rain/internal/aws"
 	"github.com/aws/aws-sdk-go-v2/service/servicequotas"
+	aws "github.com/georgealton/rain/internal/aws"
 )
 
 func getClient() *servicequotas.Client {

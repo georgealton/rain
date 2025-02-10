@@ -4,12 +4,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/aws-cloudformation/rain/cft/parse"
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/dc"
-	"github.com/aws-cloudformation/rain/internal/node"
-	"github.com/aws-cloudformation/rain/internal/s11n"
 	"github.com/aws/aws-sdk-go-v2/service/cloudformation/types"
+	"github.com/georgealton/rain/cft/parse"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/dc"
+	"github.com/georgealton/rain/internal/node"
+	"github.com/georgealton/rain/internal/s11n"
 	"gopkg.in/yaml.v3"
 )
 
@@ -26,7 +26,7 @@ Resources:
     B:
         Type: AWS::S3::Bucket
         Properties:
-            BucketName: 
+            BucketName:
                 Ref: A
     C:
         Type: AWS::S3::Bucket
@@ -158,7 +158,7 @@ Resources:
 	bResource.Identifier = "bname"
 	bResource.Model = `
 {
-	"BucketName": "bname"	
+	"BucketName": "bname"
 }
 `
 	resMap["B"] = bResource
@@ -184,7 +184,7 @@ Resources:
     MyFunc:
         Type: AWS::Lambda::Function
         Properties:
-            Role: 
+            Role:
                 Fn::GetAtt: [ MyBucket, Arn ]
     MyFunc2:
         Type: AWS::Lambda::Function
@@ -230,7 +230,7 @@ Resources:
 	bResource.Model = `
 {
 	"BucketName": "bname",
-	"Arn": "ARN" 
+	"Arn": "ARN"
 }
 `
 	bResource.Model = strings.Replace(bResource.Model, "ARN", arn, -1)
@@ -264,7 +264,7 @@ Resources:
     MyFunc:
         Type: AWS::Lambda::Function
         Properties:
-            Role: 
+            Role:
                 Fn::Sub: "${MyBucket.Arn}"
     MyFunc2:
         Type: AWS::Lambda::Function
@@ -273,7 +273,7 @@ Resources:
     MyBucket:
         Type: AWS::S3::Bucket
         Properties:
-            BucketName: 
+            BucketName:
                 Fn::Sub:
                   - "Test${A}"
                   - A: 1
@@ -315,7 +315,7 @@ Resources:
 	bResource.Model = `
 {
 	"BucketName": "Test1",
-	"Arn": "ARN" 
+	"Arn": "ARN"
 }
 `
 	bResource.Model = strings.Replace(bResource.Model, "ARN", arn, -1)
@@ -427,7 +427,7 @@ Resources:
       QueryString: "fields @message"
       LogGroupNames:
       - !Sub "${Log.LogGroupName}"
-      - !Ref Log 
+      - !Ref Log
 `
 	template, err := parse.String(source)
 	if err != nil {
@@ -466,7 +466,7 @@ Resources:
 	rResource.Identifier = "test"
 	rResource.Model = `
 {
-	"LogGroupName": "test"	
+	"LogGroupName": "test"
 }
 `
 	resMap[rName] = rResource

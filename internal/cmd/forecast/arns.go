@@ -3,11 +3,11 @@ package forecast
 import (
 	"fmt"
 
-	"github.com/aws-cloudformation/rain/internal/aws/cfn"
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/node"
-	"github.com/aws-cloudformation/rain/internal/s11n"
-	fc "github.com/aws-cloudformation/rain/plugins/forecast"
+	"github.com/georgealton/rain/internal/aws/cfn"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/node"
+	"github.com/georgealton/rain/internal/s11n"
+	fc "github.com/georgealton/rain/plugins/forecast"
 	"github.com/google/uuid"
 )
 

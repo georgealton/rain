@@ -3,12 +3,12 @@ package forecast
 import (
 	"fmt"
 
-	"github.com/aws-cloudformation/rain/cft"
-	"github.com/aws-cloudformation/rain/internal/aws/ec2"
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/console/spinner"
-	"github.com/aws-cloudformation/rain/internal/s11n"
-	fc "github.com/aws-cloudformation/rain/plugins/forecast"
+	"github.com/georgealton/rain/cft"
+	"github.com/georgealton/rain/internal/aws/ec2"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/console/spinner"
+	"github.com/georgealton/rain/internal/s11n"
+	fc "github.com/georgealton/rain/plugins/forecast"
 	"gopkg.in/yaml.v3"
 )
 

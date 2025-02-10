@@ -1,4 +1,4 @@
-module github.com/aws-cloudformation/rain
+module github.com/georgealton/rain
 
 go 1.22.1
 

@@ -8,14 +8,14 @@ import (
 	"os"
 	"time"
 
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/console"
-	"github.com/aws-cloudformation/rain/internal/console/spinner"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/aws/middleware"
 	awsconfig "github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/credentials/stscreds"
 	smithymiddleware "github.com/aws/smithy-go/middleware"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/console"
+	"github.com/georgealton/rain/internal/console/spinner"
 )
 
 // MFAProvider is called by the AWS SDK when an MFA token number

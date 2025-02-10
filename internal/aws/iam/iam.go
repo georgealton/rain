@@ -8,14 +8,14 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/aws-cloudformation/rain/internal/aws"
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/console/spinner"
-	"github.com/aws-cloudformation/rain/internal/s11n"
 	awsgo "github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/service/iam"
 	"github.com/aws/aws-sdk-go-v2/service/iam/types"
 	"github.com/aws/aws-sdk-go-v2/service/sts"
+	"github.com/georgealton/rain/internal/aws"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/console/spinner"
+	"github.com/georgealton/rain/internal/s11n"
 	"gopkg.in/yaml.v3"
 )
 

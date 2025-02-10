@@ -1,9 +1,9 @@
 package forecast
 
 import (
-	"github.com/aws-cloudformation/rain/internal/aws/kms"
-	"github.com/aws-cloudformation/rain/internal/console/spinner"
-	fc "github.com/aws-cloudformation/rain/plugins/forecast"
+	"github.com/georgealton/rain/internal/aws/kms"
+	"github.com/georgealton/rain/internal/console/spinner"
+	fc "github.com/georgealton/rain/plugins/forecast"
 )
 
 func CheckSNSTopic(input fc.PredictionInput) fc.Forecast {

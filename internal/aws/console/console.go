@@ -10,11 +10,11 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/aws-cloudformation/rain/internal/aws"
-	"github.com/aws-cloudformation/rain/internal/aws/cfn"
-	"github.com/aws-cloudformation/rain/internal/aws/sts"
-	"github.com/aws-cloudformation/rain/internal/config"
 	"github.com/aws/smithy-go/ptr"
+	"github.com/georgealton/rain/internal/aws"
+	"github.com/georgealton/rain/internal/aws/cfn"
+	"github.com/georgealton/rain/internal/aws/sts"
+	"github.com/georgealton/rain/internal/config"
 )
 
 var signinURI string

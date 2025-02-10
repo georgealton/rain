@@ -3,8 +3,8 @@ package ccapi
 import (
 	"testing"
 
-	"github.com/aws-cloudformation/rain/cft/parse"
-	"github.com/aws-cloudformation/rain/internal/s11n"
+	"github.com/georgealton/rain/cft/parse"
+	"github.com/georgealton/rain/internal/s11n"
 )
 
 func TestPatch(t *testing.T) {

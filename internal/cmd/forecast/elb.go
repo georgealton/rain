@@ -1,12 +1,12 @@
 package forecast
 
 import (
-	"github.com/aws-cloudformation/rain/internal/aws/acm"
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/console/spinner"
-	"github.com/aws-cloudformation/rain/internal/node"
-	"github.com/aws-cloudformation/rain/internal/s11n"
-	fc "github.com/aws-cloudformation/rain/plugins/forecast"
+	"github.com/georgealton/rain/internal/aws/acm"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/console/spinner"
+	"github.com/georgealton/rain/internal/node"
+	"github.com/georgealton/rain/internal/s11n"
+	fc "github.com/georgealton/rain/plugins/forecast"
 	"gopkg.in/yaml.v3"
 )
 

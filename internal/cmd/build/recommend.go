@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/aws-cloudformation/rain/cft/format"
-	"github.com/aws-cloudformation/rain/cft/parse"
-	"github.com/aws-cloudformation/rain/cft/pkg"
-	"github.com/aws-cloudformation/rain/internal/console"
+	"github.com/georgealton/rain/cft/format"
+	"github.com/georgealton/rain/cft/parse"
+	"github.com/georgealton/rain/cft/pkg"
+	"github.com/georgealton/rain/internal/console"
 	"github.com/manifoldco/promptui"
 )
 

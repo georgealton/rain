@@ -3,8 +3,8 @@ package merge
 import (
 	"testing"
 
-	"github.com/aws-cloudformation/rain/cft/diff"
-	"github.com/aws-cloudformation/rain/cft/parse"
+	"github.com/georgealton/rain/cft/diff"
+	"github.com/georgealton/rain/cft/parse"
 	"github.com/google/go-cmp/cmp"
 )
 
@@ -326,7 +326,7 @@ Resources:
 Outputs:
   BucketName:
     Value: !Ref Bucket
-    Export: 
+    Export:
       Name: BucketNameExport
 `
 
@@ -336,10 +336,10 @@ Resources:
   AccessLogsBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: 
+      BucketName:
         Fn::Sub:
           - ${ParentBucket}-access-logs
-          - ParentBucket: 
+          - ParentBucket:
               Fn::ImportValue: BucketNameExport
 `
 
@@ -357,7 +357,7 @@ Resources:
 Outputs:
   BucketName:
     Value: !Ref Bucket
-    Export: 
+    Export:
       Name: BucketNameExport
 `
 

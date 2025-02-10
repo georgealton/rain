@@ -3,7 +3,7 @@ package format
 import (
 	"testing"
 
-	"github.com/aws-cloudformation/rain/cft/parse"
+	"github.com/georgealton/rain/cft/parse"
 	"github.com/google/go-cmp/cmp"
 )
 
@@ -16,7 +16,7 @@ Resources:
   MyBucket:
     Type: AWS::S3::Bucket
     Properties:
-        BucketName: 
+        BucketName:
           Ref: Name
 Outputs:
   BucketName:
@@ -79,7 +79,7 @@ Resources:
   MyBucket:
     Type: AWS::S3::Bucket
     Properties:
-        BucketName: 
+        BucketName:
           Ref: Name
 `
 

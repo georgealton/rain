@@ -3,13 +3,13 @@ package forecast
 import (
 	"fmt"
 
-	"github.com/aws-cloudformation/rain/internal/aws/cfn"
-	"github.com/aws-cloudformation/rain/internal/aws/s3"
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/console/spinner"
-	"github.com/aws-cloudformation/rain/internal/s11n"
-	fc "github.com/aws-cloudformation/rain/plugins/forecast"
 	"github.com/aws/aws-sdk-go-v2/service/cloudformation/types"
+	"github.com/georgealton/rain/internal/aws/cfn"
+	"github.com/georgealton/rain/internal/aws/s3"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/console/spinner"
+	"github.com/georgealton/rain/internal/s11n"
+	fc "github.com/georgealton/rain/plugins/forecast"
 )
 
 // An empty bucket cannot be deleted, which will cause a stack DELETE to fail.

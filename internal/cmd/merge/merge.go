@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/aws-cloudformation/rain/cft"
-	"github.com/aws-cloudformation/rain/cft/format"
-	"github.com/aws-cloudformation/rain/cft/parse"
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/node"
-	"github.com/aws-cloudformation/rain/internal/ui"
+	"github.com/georgealton/rain/cft"
+	"github.com/georgealton/rain/cft/format"
+	"github.com/georgealton/rain/cft/parse"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/node"
+	"github.com/georgealton/rain/internal/ui"
 	"github.com/spf13/cobra"
 )
 

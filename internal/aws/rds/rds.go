@@ -3,8 +3,8 @@ package rds
 import (
 	"context"
 
-	aws "github.com/aws-cloudformation/rain/internal/aws"
 	"github.com/aws/aws-sdk-go-v2/service/rds"
+	aws "github.com/georgealton/rain/internal/aws"
 )
 
 func getClient() *rds.Client {

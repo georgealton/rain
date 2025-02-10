@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/aws-cloudformation/rain/cft/parse"
+	"github.com/georgealton/rain/cft/parse"
 	"gopkg.in/yaml.v3"
 )
 

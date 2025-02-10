@@ -6,8 +6,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/aws-cloudformation/rain/internal/aws/cfn"
-	"github.com/aws-cloudformation/rain/internal/config"
+	"github.com/georgealton/rain/internal/aws/cfn"
+	"github.com/georgealton/rain/internal/config"
 )
 
 // #definition classes

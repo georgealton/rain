@@ -3,7 +3,7 @@ package cfn_test
 import (
 	"testing"
 
-	"github.com/aws-cloudformation/rain/internal/aws/cfn"
+	"github.com/georgealton/rain/internal/aws/cfn"
 )
 
 func TestStatusIsSettled(t *testing.T) {

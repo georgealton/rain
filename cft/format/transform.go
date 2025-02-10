@@ -3,8 +3,8 @@ package format
 import (
 	"strings"
 
-	"github.com/aws-cloudformation/rain/cft"
-	"github.com/aws-cloudformation/rain/internal/node"
+	"github.com/georgealton/rain/cft"
+	"github.com/georgealton/rain/internal/node"
 	"gopkg.in/yaml.v3"
 )
 

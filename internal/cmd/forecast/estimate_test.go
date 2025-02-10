@@ -3,7 +3,7 @@ package forecast
 import (
 	"testing"
 
-	"github.com/aws-cloudformation/rain/cft/parse"
+	"github.com/georgealton/rain/cft/parse"
 )
 
 func TestResourceEstimate(t *testing.T) {
@@ -37,22 +37,22 @@ Resources:
       BucketName: !Ref N
 
   # 12
-  B: 
+  B:
     Type: AWS::S3::BucketPolicy
     DependsOn: E
 
-  # 16 
+  # 16
   C:
     Type: AWS::EC2::Instance
     DependsOn: [B, D, F, G]
 
-  # 6s 
+  # 6s
   D:
     Type: AWS::EC2::LaunchTemplate
     DependsOn: E
 
-  # 30s 
-  E: 
+  # 30s
+  E:
     Type: AWS::S3::Bucket
 
   # 30s

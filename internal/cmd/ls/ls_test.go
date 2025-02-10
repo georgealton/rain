@@ -3,7 +3,7 @@ package ls_test
 import (
 	"os"
 
-	"github.com/aws-cloudformation/rain/internal/cmd/ls"
+	"github.com/georgealton/rain/internal/cmd/ls"
 )
 
 func Example_ls_help() {

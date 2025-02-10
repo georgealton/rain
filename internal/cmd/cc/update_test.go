@@ -3,9 +3,9 @@ package cc
 import (
 	"testing"
 
-	"github.com/aws-cloudformation/rain/cft/format"
-	"github.com/aws-cloudformation/rain/cft/parse"
-	"github.com/aws-cloudformation/rain/internal/config"
+	"github.com/georgealton/rain/cft/format"
+	"github.com/georgealton/rain/cft/parse"
+	"github.com/georgealton/rain/internal/config"
 )
 
 func TestUpdate(t *testing.T) {

@@ -5,18 +5,18 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/aws-cloudformation/rain/cft"
-	"github.com/aws-cloudformation/rain/cft/format"
-	cftpkg "github.com/aws-cloudformation/rain/cft/pkg"
-	"github.com/aws-cloudformation/rain/internal/aws"
-	"github.com/aws-cloudformation/rain/internal/aws/cfn"
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/console"
-	"github.com/aws-cloudformation/rain/internal/console/spinner"
-	"github.com/aws-cloudformation/rain/internal/dc"
-	"github.com/aws-cloudformation/rain/internal/s11n"
-	"github.com/aws-cloudformation/rain/internal/ui"
 	"github.com/aws/aws-sdk-go-v2/service/cloudformation/types"
+	"github.com/georgealton/rain/cft"
+	"github.com/georgealton/rain/cft/format"
+	cftpkg "github.com/georgealton/rain/cft/pkg"
+	"github.com/georgealton/rain/internal/aws"
+	"github.com/georgealton/rain/internal/aws/cfn"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/console"
+	"github.com/georgealton/rain/internal/console/spinner"
+	"github.com/georgealton/rain/internal/dc"
+	"github.com/georgealton/rain/internal/s11n"
+	"github.com/georgealton/rain/internal/ui"
 	"gopkg.in/yaml.v3"
 
 	"github.com/spf13/cobra"
@@ -40,7 +40,7 @@ var includeNested bool
 var Cmd = &cobra.Command{
 	Use:   "deploy <template> [stack]",
 	Short: "Deploy a CloudFormation stack or changeset from a local template",
-	Long: `Creates or updates a CloudFormation stack named <stack> from the template file <template>. 
+	Long: `Creates or updates a CloudFormation stack named <stack> from the template file <template>.
 You can also create and execute changesets with this command.
 If you don't specify a stack name, rain will use the template filename minus its extension.
 

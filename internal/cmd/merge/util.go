@@ -3,9 +3,9 @@ package merge
 import (
 	"fmt"
 
-	"github.com/aws-cloudformation/rain/cft"
-	"github.com/aws-cloudformation/rain/cft/parse"
-	"github.com/aws-cloudformation/rain/internal/config"
+	"github.com/georgealton/rain/cft"
+	"github.com/georgealton/rain/cft/parse"
+	"github.com/georgealton/rain/internal/config"
 	"gopkg.in/yaml.v3"
 )
 

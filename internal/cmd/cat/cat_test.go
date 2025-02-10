@@ -3,7 +3,7 @@ package cat_test
 import (
 	"os"
 
-	"github.com/aws-cloudformation/rain/internal/cmd/cat"
+	"github.com/georgealton/rain/internal/cmd/cat"
 )
 
 func Example_cat_help() {

@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 
-	rainaws "github.com/aws-cloudformation/rain/internal/aws"
 	"github.com/aws/aws-sdk-go-v2/service/lightsail"
+	rainaws "github.com/georgealton/rain/internal/aws"
 )
 
 func getClient() *lightsail.Client {

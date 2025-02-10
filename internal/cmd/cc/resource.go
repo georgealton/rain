@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/aws-cloudformation/rain/cft/diff"
+	"github.com/georgealton/rain/cft/diff"
 	"gopkg.in/yaml.v3"
 )
 

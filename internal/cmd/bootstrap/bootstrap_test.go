@@ -3,7 +3,7 @@ package bootstrap_test
 import (
 	"os"
 
-	"github.com/aws-cloudformation/rain/internal/cmd/bootstrap"
+	"github.com/georgealton/rain/internal/cmd/bootstrap"
 )
 
 func Example_bootstrap_help() {

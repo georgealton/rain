@@ -3,9 +3,9 @@ package deploy_test
 import (
 	"testing"
 
-	"github.com/aws-cloudformation/rain/cft/parse"
-	"github.com/aws-cloudformation/rain/cft/pkg"
-	"github.com/aws-cloudformation/rain/internal/cmd/deploy"
+	"github.com/georgealton/rain/cft/parse"
+	"github.com/georgealton/rain/cft/pkg"
+	"github.com/georgealton/rain/internal/cmd/deploy"
 )
 
 func TestHasRainMetadata(t *testing.T) {

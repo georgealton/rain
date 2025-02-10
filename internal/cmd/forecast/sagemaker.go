@@ -5,12 +5,12 @@ import (
 	"encoding/json"
 	"math"
 
-	"github.com/aws-cloudformation/rain/internal/aws/sagemaker"
-	"github.com/aws-cloudformation/rain/internal/aws/servicequotas"
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/console/spinner"
-	"github.com/aws-cloudformation/rain/internal/s11n"
-	fc "github.com/aws-cloudformation/rain/plugins/forecast"
+	"github.com/georgealton/rain/internal/aws/sagemaker"
+	"github.com/georgealton/rain/internal/aws/servicequotas"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/console/spinner"
+	"github.com/georgealton/rain/internal/s11n"
+	fc "github.com/georgealton/rain/plugins/forecast"
 )
 
 //go:embed sagemaker-notebook-instance-codes.json

@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"sort"
 
-	rainaws "github.com/aws-cloudformation/rain/internal/aws"
-	"github.com/aws-cloudformation/rain/internal/config"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/service/ec2/types"
+	rainaws "github.com/georgealton/rain/internal/aws"
+	"github.com/georgealton/rain/internal/config"
 
 	"github.com/aws/aws-sdk-go-v2/service/ec2"
 )

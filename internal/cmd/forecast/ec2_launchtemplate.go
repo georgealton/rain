@@ -1,6 +1,6 @@
 package forecast
 
-import fc "github.com/aws-cloudformation/rain/plugins/forecast"
+import fc "github.com/georgealton/rain/plugins/forecast"
 
 // AWS::EC2::LaunchTemplate
 

@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/aws-cloudformation/rain/internal/aws/cfn"
+	"github.com/georgealton/rain/internal/aws/cfn"
 )
 
 func TestSchema(t *testing.T) {
@@ -12,8 +12,8 @@ func TestSchema(t *testing.T) {
 {
     "typeName": "Rain::Test::Testing",
     "description": "The description",
-    "sourceUrl": "https://github.com/aws-cloudformation/rain.git",
-    "definitions": { 
+    "sourceUrl": "https://github.com/georgealton/rain.git",
+    "definitions": {
 		"DefA": {
 			"type": "string",
 			"enum": [ "Foo", "Bar" ]
@@ -29,9 +29,9 @@ func TestSchema(t *testing.T) {
         },
 		"PropA": {
 			"$ref": "#/definitions/DefA"
-		}, 
+		},
 		"PropB": {
-			"type": "object", 
+			"type": "object",
 			"oneOf": [
 				{
 					"$ref": "#/definitions/DefA"
@@ -40,7 +40,7 @@ func TestSchema(t *testing.T) {
 					"$ref": "#/definitions/DefB"
 				}
 			]
-		}			
+		}
     },
     "additionalProperties": false,
     "tagging": {

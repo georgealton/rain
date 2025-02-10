@@ -1,7 +1,7 @@
 package module
 
 import (
-	"github.com/aws-cloudformation/rain/internal/config"
+	"github.com/georgealton/rain/internal/config"
 	"github.com/spf13/cobra"
 )
 

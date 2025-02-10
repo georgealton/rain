@@ -3,9 +3,9 @@ package cft_test
 import (
 	"testing"
 
-	"github.com/aws-cloudformation/rain/cft"
-	"github.com/aws-cloudformation/rain/cft/format"
-	"github.com/aws-cloudformation/rain/cft/parse"
+	"github.com/georgealton/rain/cft"
+	"github.com/georgealton/rain/cft/format"
+	"github.com/georgealton/rain/cft/parse"
 	"github.com/google/go-cmp/cmp"
 	"gopkg.in/yaml.v3"
 )

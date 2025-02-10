@@ -6,9 +6,9 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/console"
-	"github.com/aws-cloudformation/rain/internal/console/spinner"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/console"
+	"github.com/georgealton/rain/internal/console/spinner"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 )

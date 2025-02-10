@@ -6,17 +6,17 @@ import (
 	"path/filepath"
 	"regexp"
 
-	"github.com/aws-cloudformation/rain/cft"
-	"github.com/aws-cloudformation/rain/cft/format"
-	"github.com/aws-cloudformation/rain/internal/aws/cfn"
-	"github.com/aws-cloudformation/rain/internal/cmd/deploy"
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/console"
-	"github.com/aws-cloudformation/rain/internal/console/spinner"
-	"github.com/aws-cloudformation/rain/internal/dc"
-	"github.com/aws-cloudformation/rain/internal/ui"
 	"github.com/aws/aws-sdk-go-v2/service/cloudformation/types"
 	"github.com/aws/smithy-go/ptr"
+	"github.com/georgealton/rain/cft"
+	"github.com/georgealton/rain/cft/format"
+	"github.com/georgealton/rain/internal/aws/cfn"
+	"github.com/georgealton/rain/internal/cmd/deploy"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/console"
+	"github.com/georgealton/rain/internal/console/spinner"
+	"github.com/georgealton/rain/internal/dc"
+	"github.com/georgealton/rain/internal/ui"
 	"golang.org/x/exp/constraints"
 	"gopkg.in/yaml.v3"
 
@@ -52,7 +52,7 @@ Rain will attempt to create an S3 bucket to store artifacts that it packages and
 The bucket's name will be of the format rain-artifacts-<AWS account id>-<AWS region>.
 
 The config flags can be used to set accounts, regions to operate and tags with parameters to use.
-Configuration file with extended options can be provided along with '--config' flag in YAML or JSON format (see [example file](https://github.com/aws-cloudformation/rain/blob/main/test/samples/test-config.yaml) for details).
+Configuration file with extended options can be provided along with '--config' flag in YAML or JSON format (see [example file](https://github.com/georgealton/rain/blob/main/test/samples/test-config.yaml) for details).
 
 YAML:
 ` + "```" + `

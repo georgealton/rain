@@ -1,8 +1,8 @@
 package cfn
 
 import (
-	"github.com/aws-cloudformation/rain/cft"
 	"github.com/aws/aws-sdk-go-v2/service/cloudformation/types"
+	"github.com/georgealton/rain/cft"
 )
 
 type StackSetConfig struct {

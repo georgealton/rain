@@ -9,21 +9,21 @@ import (
 	"plugin"
 	"strings"
 
-	"github.com/aws-cloudformation/rain/cft"
-	"github.com/aws-cloudformation/rain/cft/format"
-	"github.com/aws-cloudformation/rain/cft/parse"
-	"github.com/aws-cloudformation/rain/cft/pkg"
-	"github.com/aws-cloudformation/rain/internal/aws"
-	"github.com/aws-cloudformation/rain/internal/aws/cfn"
-	"github.com/aws-cloudformation/rain/internal/aws/iam"
-	"github.com/aws-cloudformation/rain/internal/cmd/deploy"
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/console"
-	"github.com/aws-cloudformation/rain/internal/console/spinner"
-	"github.com/aws-cloudformation/rain/internal/dc"
-	"github.com/aws-cloudformation/rain/internal/s11n"
-	"github.com/aws-cloudformation/rain/plugins/deployconfig"
-	fc "github.com/aws-cloudformation/rain/plugins/forecast"
+	"github.com/georgealton/rain/cft"
+	"github.com/georgealton/rain/cft/format"
+	"github.com/georgealton/rain/cft/parse"
+	"github.com/georgealton/rain/cft/pkg"
+	"github.com/georgealton/rain/internal/aws"
+	"github.com/georgealton/rain/internal/aws/cfn"
+	"github.com/georgealton/rain/internal/aws/iam"
+	"github.com/georgealton/rain/internal/cmd/deploy"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/console"
+	"github.com/georgealton/rain/internal/console/spinner"
+	"github.com/georgealton/rain/internal/dc"
+	"github.com/georgealton/rain/internal/s11n"
+	"github.com/georgealton/rain/plugins/deployconfig"
+	fc "github.com/georgealton/rain/plugins/forecast"
 	"github.com/spf13/cobra"
 	"gopkg.in/yaml.v3"
 
@@ -329,19 +329,19 @@ func Predict(source cft.Template, stackName string, stack types.Stack, stackExis
 var Cmd = &cobra.Command{
 	Use:   "forecast --experimental <template> [stackName]",
 	Short: "Predict deployment failures",
-	Long: `Outputs warnings about potential deployment failures due to constraints in 
-the account or misconfigurations in the template related to dependencies in 
+	Long: `Outputs warnings about potential deployment failures due to constraints in
+the account or misconfigurations in the template related to dependencies in
 the account.
 
 NOTE: This is an experimental feature!
 
 To use this command, add --experimental or -x as an argument.
 
-This command is not a linter! Use cfn-lint for that. The forecast command 
-is concerned with things that could go wrong during deployment, after the 
+This command is not a linter! Use cfn-lint for that. The forecast command
+is concerned with things that could go wrong during deployment, after the
 template has been checked to make sure it has a valid syntax.
 
-This command checks for some common issues across all resources, and 
+This command checks for some common issues across all resources, and
 resource-specific checks. See the README for more details.
 `,
 	Args:                  cobra.RangeArgs(1, 2),

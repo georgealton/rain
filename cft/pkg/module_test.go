@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/aws-cloudformation/rain/cft/diff"
-	"github.com/aws-cloudformation/rain/cft/parse"
-	"github.com/aws-cloudformation/rain/cft/pkg"
+	"github.com/georgealton/rain/cft/diff"
+	"github.com/georgealton/rain/cft/parse"
+	"github.com/georgealton/rain/cft/pkg"
 	"gopkg.in/yaml.v3"
 )
 

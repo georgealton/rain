@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"slices"
 
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/node"
-	"github.com/aws-cloudformation/rain/internal/s11n"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/node"
+	"github.com/georgealton/rain/internal/s11n"
 	"gopkg.in/yaml.v3"
 )
 

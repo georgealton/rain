@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/aws-cloudformation/rain/internal/config"
+	"github.com/georgealton/rain/internal/config"
 	"github.com/google/go-cmp/cmp"
 	"github.com/mattn/go-runewidth"
 	"github.com/stretchr/testify/assert"
@@ -169,11 +169,11 @@ func TestTable_AddRow(t *testing.T) {
 	// check the full table
 	buf.Reset()
 	tbl.Print()
-	expected := `foo      bar      
-fizz     buzz     
-                  
-cat               
-bippity  boppity  
+	expected := `foo      bar
+fizz     buzz
+
+cat
+bippity  boppity
 `
 	if diff := cmp.Diff(expected, buf.String()); diff != "" {
 		t.Fatalf("table mismatch (-expected +got):\n%s\nout=%#v", diff, buf.String())
@@ -203,17 +203,17 @@ func TestTable_AddRow_WithNewLines(t *testing.T) {
 	// check the full table
 	buf.Reset()
 	tbl.Print()
-	expected := `foo      bar      
-fizz     buzz     
-                  
-cat               
-bippity  boppity  
-         boop     
-a        b        
-c        d        
-1        x        
-2        y        
-         z        
+	expected := `foo      bar
+fizz     buzz
+
+cat
+bippity  boppity
+         boop
+a        b
+c        d
+1        x
+2        y
+         z
 `
 	if diff := cmp.Diff(expected, buf.String()); diff != "" {
 		t.Fatalf("table mismatch (-expected +got):\n%s\nout=%#v", diff, buf.String())

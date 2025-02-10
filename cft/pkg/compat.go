@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/aws-cloudformation/rain/cft/format"
-	"github.com/aws-cloudformation/rain/internal/config"
+	"github.com/georgealton/rain/cft/format"
+	"github.com/georgealton/rain/internal/config"
 	"gopkg.in/yaml.v3"
 )
 

@@ -4,9 +4,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/aws-cloudformation/rain/cft"
-	fc "github.com/aws-cloudformation/rain/plugins/forecast"
 	"github.com/aws/aws-sdk-go-v2/service/cloudformation/types"
+	"github.com/georgealton/rain/cft"
+	fc "github.com/georgealton/rain/plugins/forecast"
 	"gopkg.in/yaml.v3"
 )
 

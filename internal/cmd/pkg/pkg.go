@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/aws-cloudformation/rain/cft/format"
-	cftpkg "github.com/aws-cloudformation/rain/cft/pkg"
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/console/spinner"
-	"github.com/aws-cloudformation/rain/internal/node"
-	"github.com/aws-cloudformation/rain/internal/ui"
+	"github.com/georgealton/rain/cft/format"
+	cftpkg "github.com/georgealton/rain/cft/pkg"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/console/spinner"
+	"github.com/georgealton/rain/internal/node"
+	"github.com/georgealton/rain/internal/ui"
 	"github.com/spf13/cobra"
 )
 
@@ -39,7 +39,7 @@ You may use the following, rain-specific directives in templates packaged with "
   !Rain::S3 <path>             Uploads <path> (zipping first if it is a directory) to S3
                                and embeds the S3 URI into the template as a string
 
-  !Rain::S3 <object>           supply an object with the following properties: 
+  !Rain::S3 <object>           supply an object with the following properties:
     Path: <path>               a file or directory to be uploaded to S3
     Zip: true|false            If "true", rain with zip <path> even if it is a file
     BucketProperty: <bucket>   If you supply "BucketProperty" and "KeyProperty", rain pkg will
@@ -49,12 +49,12 @@ You may use the following, rain-specific directives in templates packaged with "
                                Do not specify this property if you supply BucketProperty and KeyProperty.
                                The default Format is "Uri".
 
-  !Rain::Module <url>          Supply a URL to a rain module, which is similar to a CloudFormation module, 
-                               but allows for type inheritance. One of the resources in the module yaml file 
-                               must be called "ModuleExtension", and it must have a Metadata entry called 
-                               "Extends" that supplies the existing type to be extended. The Parameters section 
+  !Rain::Module <url>          Supply a URL to a rain module, which is similar to a CloudFormation module,
+                               but allows for type inheritance. One of the resources in the module yaml file
+                               must be called "ModuleExtension", and it must have a Metadata entry called
+                               "Extends" that supplies the existing type to be extended. The Parameters section
                                of the module can be used to define additional properties for the extension.
-                               This is an experimental directive that must be enabled by adding the 
+                               This is an experimental directive that must be enabled by adding the
                                --experimental arg on the command line.
 `,
 	Args:                  cobra.ExactArgs(1),

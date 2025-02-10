@@ -3,11 +3,11 @@ package forecast
 import (
 	"strings"
 
-	"github.com/aws-cloudformation/rain/internal/aws/ssm"
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/s11n"
-	"github.com/aws-cloudformation/rain/plugins/deployconfig"
-	fc "github.com/aws-cloudformation/rain/plugins/forecast"
+	"github.com/georgealton/rain/internal/aws/ssm"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/s11n"
+	"github.com/georgealton/rain/plugins/deployconfig"
+	fc "github.com/georgealton/rain/plugins/forecast"
 	"gopkg.in/yaml.v3"
 )
 

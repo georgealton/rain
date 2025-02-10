@@ -6,11 +6,11 @@ import (
 	"io"
 	"os"
 
-	"github.com/aws-cloudformation/rain/cft/pkg"
-	"github.com/aws-cloudformation/rain/internal/aws/codeartifact"
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/console"
-	"github.com/aws-cloudformation/rain/internal/console/spinner"
+	"github.com/georgealton/rain/cft/pkg"
+	"github.com/georgealton/rain/internal/aws/codeartifact"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/console"
+	"github.com/georgealton/rain/internal/console/spinner"
 	"github.com/spf13/cobra"
 )
 

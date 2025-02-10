@@ -3,9 +3,9 @@ package sts
 import (
 	"context"
 
-	"github.com/aws-cloudformation/rain/internal/aws"
 	"github.com/aws/aws-sdk-go-v2/service/sts"
 	"github.com/aws/aws-sdk-go-v2/service/sts/types"
+	"github.com/georgealton/rain/internal/aws"
 )
 
 func getClient() *sts.Client {

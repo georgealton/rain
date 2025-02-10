@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/aws-cloudformation/rain/internal/config"
+	"github.com/georgealton/rain/internal/config"
 )
 
 // Mode represents a diff mode

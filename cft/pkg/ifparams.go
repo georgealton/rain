@@ -1,8 +1,8 @@
 package pkg
 
 import (
-	"github.com/aws-cloudformation/rain/internal/node"
-	"github.com/aws-cloudformation/rain/internal/s11n"
+	"github.com/georgealton/rain/internal/node"
+	"github.com/georgealton/rain/internal/s11n"
 	"gopkg.in/yaml.v3"
 )
 

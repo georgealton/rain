@@ -12,7 +12,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/aws-cloudformation/rain/internal/config"
+	"github.com/georgealton/rain/internal/config"
 	"github.com/google/uuid"
 )
 

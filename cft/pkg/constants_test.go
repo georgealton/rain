@@ -3,8 +3,8 @@ package pkg
 import (
 	"testing"
 
-	"github.com/aws-cloudformation/rain/cft/diff"
-	"github.com/aws-cloudformation/rain/cft/parse"
+	"github.com/georgealton/rain/cft/diff"
+	"github.com/georgealton/rain/cft/parse"
 	"gopkg.in/yaml.v3"
 )
 
@@ -31,7 +31,7 @@ Resources:
   Bucket3:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: !Sub "pre-${Prefix}-${Rain::Test1}-suffix" 
+      BucketName: !Sub "pre-${Prefix}-${Rain::Test1}-suffix"
       Foo: !Sub ${Rain::Test1}
       Bar: !Sub ${!leavemealone}
 `

@@ -3,15 +3,15 @@ package cc
 import (
 	"fmt"
 
-	"github.com/aws-cloudformation/rain/cft"
-	"github.com/aws-cloudformation/rain/cft/diff"
-	"github.com/aws-cloudformation/rain/cft/format"
-	"github.com/aws-cloudformation/rain/internal/aws/ccapi"
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/node"
-	"github.com/aws-cloudformation/rain/internal/s11n"
-	"github.com/aws-cloudformation/rain/internal/table"
 	"github.com/fatih/color"
+	"github.com/georgealton/rain/cft"
+	"github.com/georgealton/rain/cft/diff"
+	"github.com/georgealton/rain/cft/format"
+	"github.com/georgealton/rain/internal/aws/ccapi"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/node"
+	"github.com/georgealton/rain/internal/s11n"
+	"github.com/georgealton/rain/internal/table"
 	"gopkg.in/yaml.v3"
 )
 

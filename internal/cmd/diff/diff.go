@@ -3,10 +3,10 @@ package diff
 import (
 	"fmt"
 
-	"github.com/aws-cloudformation/rain/internal/ui"
+	"github.com/georgealton/rain/internal/ui"
 
-	"github.com/aws-cloudformation/rain/cft/diff"
-	"github.com/aws-cloudformation/rain/cft/parse"
+	"github.com/georgealton/rain/cft/diff"
+	"github.com/georgealton/rain/cft/parse"
 	"github.com/spf13/cobra"
 )
 

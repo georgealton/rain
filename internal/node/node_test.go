@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/aws-cloudformation/rain/internal/node"
+	"github.com/georgealton/rain/internal/node"
 	"gopkg.in/yaml.v3"
 )
 

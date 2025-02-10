@@ -1,10 +1,10 @@
 package cc
 
 import (
-	"github.com/aws-cloudformation/rain/cft"
-	"github.com/aws-cloudformation/rain/internal/aws/s3"
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/plugins/deployconfig"
+	"github.com/georgealton/rain/cft"
+	"github.com/georgealton/rain/internal/aws/s3"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/plugins/deployconfig"
 	"github.com/spf13/cobra"
 )
 

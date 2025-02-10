@@ -7,13 +7,13 @@ import (
 	"sort"
 
 	"github.com/appscode/jsonpatch"
-	"github.com/aws-cloudformation/rain/cft/format"
-	"github.com/aws-cloudformation/rain/internal/aws"
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/node"
-	"github.com/aws-cloudformation/rain/internal/s11n"
 	"github.com/aws/aws-sdk-go-v2/service/cloudcontrol"
 	"github.com/aws/aws-sdk-go-v2/service/cloudcontrol/types"
+	"github.com/georgealton/rain/cft/format"
+	"github.com/georgealton/rain/internal/aws"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/node"
+	"github.com/georgealton/rain/internal/s11n"
 	"github.com/google/uuid"
 	"gopkg.in/yaml.v3"
 )

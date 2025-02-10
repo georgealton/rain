@@ -3,8 +3,8 @@ package tree_test
 import (
 	"os"
 
-	"github.com/aws-cloudformation/rain/internal/cmd/tree"
-	"github.com/aws-cloudformation/rain/internal/console"
+	"github.com/georgealton/rain/internal/cmd/tree"
+	"github.com/georgealton/rain/internal/console"
 )
 
 func Example_tree() {

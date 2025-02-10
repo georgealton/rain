@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/aws-cloudformation/rain/cft/format"
-	"github.com/aws-cloudformation/rain/cft/parse"
+	"github.com/georgealton/rain/cft/format"
+	"github.com/georgealton/rain/cft/parse"
 	"github.com/google/go-cmp/cmp"
 )
 
@@ -44,7 +44,7 @@ Resources:
         ZipFile: |
           import boto3
 
-          def handler: 
+          def handler:
             """Example."""
 
             print('hello')
@@ -493,7 +493,7 @@ Mappings:
 Resources:
   Topic:
     Type: AWS::SNS::Topic
-    Properties: 
+    Properties:
       TopicName: !FindInMap [EnvironmentMap, MappedParam, !Ref EnvironmentParam]
 `
 
@@ -544,7 +544,7 @@ func TestZipLines(t *testing.T) {
   AWSTemplateFormatVersion: "2010-09-09"
 
   Description: Example AWS CloudFormation template snippet.
-  
+
   Resources:
     Test:
       Type: AWS::Lambda::Function
@@ -555,13 +555,13 @@ func TestZipLines(t *testing.T) {
         Code:
           ZipFile: |
             import boto3
-  
-            def handler: 
-  
+
+            def handler:
+
               """Example."""
-  
+
               print('hello')
-   
+
   `
 
 	expect := `AWSTemplateFormatVersion: "2010-09-09"
@@ -752,7 +752,7 @@ Resources:
     Properties:
       AvailabilityZone: !Select
         - 0
-        - !GetAZs 
+        - !GetAZs
 `
 
 	if strings.TrimSpace(output) != strings.TrimSpace(expected) {

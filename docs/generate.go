@@ -10,8 +10,8 @@ import (
 
 	"github.com/spf13/cobra/doc"
 
-	"github.com/aws-cloudformation/rain/internal/cmd/rain"
-	"github.com/aws-cloudformation/rain/internal/console"
+	"github.com/georgealton/rain/internal/cmd/rain"
+	"github.com/georgealton/rain/internal/console"
 )
 
 var tmpl *template.Template

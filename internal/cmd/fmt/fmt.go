@@ -6,15 +6,15 @@ import (
 	"os"
 	"strings"
 
-	rainpkl "github.com/aws-cloudformation/rain/pkl"
+	rainpkl "github.com/georgealton/rain/pkl"
 
-	"github.com/aws-cloudformation/rain/cft/format"
-	"github.com/aws-cloudformation/rain/internal/config"
-	"github.com/aws-cloudformation/rain/internal/console"
-	"github.com/aws-cloudformation/rain/internal/node"
-	"github.com/aws-cloudformation/rain/internal/ui"
+	"github.com/georgealton/rain/cft/format"
+	"github.com/georgealton/rain/internal/config"
+	"github.com/georgealton/rain/internal/console"
+	"github.com/georgealton/rain/internal/node"
+	"github.com/georgealton/rain/internal/ui"
 
-	"github.com/aws-cloudformation/rain/cft/parse"
+	"github.com/georgealton/rain/cft/parse"
 	"github.com/spf13/cobra"
 )
 

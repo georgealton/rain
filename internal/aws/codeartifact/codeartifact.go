@@ -14,14 +14,14 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/aws-cloudformation/rain/internal/console/spinner"
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/service/codeartifact/types"
+	"github.com/georgealton/rain/internal/console/spinner"
 
-	rainaws "github.com/aws-cloudformation/rain/internal/aws"
-	"github.com/aws-cloudformation/rain/internal/config"
 	"github.com/aws/aws-sdk-go-v2/service/codeartifact"
 	"github.com/aws/smithy-go"
+	rainaws "github.com/georgealton/rain/internal/aws"
+	"github.com/georgealton/rain/internal/config"
 )
 
 func getClient() *codeartifact.Client {
