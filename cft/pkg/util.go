@@ -16,6 +16,8 @@
 //	`KeyProperty`: Name of returned property that will contain the object key
 //	`VersionProperty`: (optional) Name of returned property that will contain the object version
 //	`Extension`: (optional) Extension appended to the end of the Object Key in S3
+//	`Bucket`: (optional) Name of S3 Bucket to upload to overriding any other Bucket
+//	`BucketOwner`: (optional) Owner of the Bucket
 package pkg
 
 import (
@@ -112,7 +114,7 @@ func zipPath(root string) (string, error) {
 
 // Upload a file or directory to S3.
 // If path is a directory, it will be zipped first.
-func upload(root, path string, force bool, extension string) (*s3Path, error) {
+func upload(root, path string, force bool, extension string, bucket string, bucketOwner string) (*s3Path, error) {
 	if !filepath.IsAbs(path) {
 		path = filepath.Join(root, path)
 		if abs, err := filepath.Abs(path); err == nil {
@@ -152,8 +154,10 @@ func upload(root, path string, force bool, extension string) (*s3Path, error) {
 		return nil, err
 	}
 
-	bucket := s3.RainBucket(false)
-	key, err := s3.Upload(bucket, content, extension)
+	if bucket == "" {
+		bucket = s3.RainBucket(false)
+	}
+	key, err := s3.Upload(bucket, content, extension, bucketOwner)
 
 	uploads[artifactName] = &s3Path{
 		bucket: bucket,

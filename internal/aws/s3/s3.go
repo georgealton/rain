@@ -173,7 +173,7 @@ func CreateBucket(bucketName string) error {
 }
 
 // Upload uploads an artifact to the bucket with a unique name
-func Upload(bucketName string, content []byte, extension string) (string, error) {
+func Upload(bucketName string, content []byte, extension string, bucketOwner string) (string, error) {
 	isBucketExists, errBucketExists := BucketExists(bucketName)
 
 	if errBucketExists != nil {
@@ -192,6 +192,10 @@ func Upload(bucketName string, content []byte, extension string) (string, error)
 	accountId, err := getAccountId()
 	if err != nil {
 		return "", err
+	}
+
+	if bucketOwner != "" {
+		accountId = bucketOwner
 	}
 
 	_, err = getClient().PutObject(context.Background(), &s3.PutObjectInput{

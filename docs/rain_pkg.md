@@ -30,6 +30,8 @@ You may use the following, rain-specific directives in templates packaged with "
                                Do not specify this property if you supply BucketProperty and KeyProperty.
                                The default Format is "Uri".
     Extension: <ext>           If specified, Appends .<ext> to the artifact object in S3.
+    Bucket: <bucket>           When specified overrides the default Bucket and uploads to this <bucket> instead
+    BucketOwner: <owner>       Owner of Bucket <bucket>
 
   !Rain::Module <url>          Supply a URL to a rain module, which is similar to a CloudFormation module, 
                                but allows for type inheritance. One of the resources in the module yaml file 
